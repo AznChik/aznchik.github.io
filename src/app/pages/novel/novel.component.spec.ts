@@ -18,4 +18,18 @@ describe('NovelComponent', () => {
   it('should create app', () => {
     expect(app).toBeTruthy();
   });
+
+  describe('openDisclaimer()', () => {
+    it('should add opacity class to the novel-cover', () => {
+      app['openDisclaimer']();
+      expect(document.querySelector('#novel-cover')?.classList).toContain('opacity');
+    });
+
+    it('should show modal', () => {
+      const dialog = document.querySelector('#disclaimer-modal') as HTMLDialogElement;
+      spyOn(dialog, 'showModal');
+      app['openDisclaimer']();
+      expect(dialog.showModal).toHaveBeenCalled();
+    });
+  });
 });
