@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './story.component.html',
   styleUrls: ['./story.component.scss']
 })
-export class StoryComponent { }
+export class StoryComponent {
+  protected restartStory(): void { }
+}

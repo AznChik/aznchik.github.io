@@ -1,0 +1,25 @@
+@import "src/styles.scss";
+
+button {
+    cursor: pointer;
+}
+
+#restart {
+    position: fixed;
+    background: transparent;
+    border: none;
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+#inventory {
+    position: fixed;
+    bottom: 20px;
+    background-color: $green;
+    border: 5px solid $purple;
+    width: calc(100% - 50px);
+    height: 50px;
+}
