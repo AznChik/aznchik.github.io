@@ -5,7 +5,12 @@
 <p>{{ story.text }}</p>
 
 <section id="buttons">
-    <button *ngFor="let button of story.buttons">{{ button }}</button>
+    <button *ngFor="let button of story.buttons" (click)="continueStory(button.id)">{{ button.text }}</button>
 </section>
 
-<section id="inventory"></section>
+<section id="inventory">
+    <figure>
+        <img id="faz-token" src="../../../assets/images/faz-token.webp" alt="faz token"/>
+        <figcaption>{{ tokenCount }}</figcaption>
+    </figure>
+</section>

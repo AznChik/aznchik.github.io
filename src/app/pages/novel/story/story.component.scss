@@ -33,4 +33,31 @@ p {
     border: 5px solid $purple;
     width: calc(100% - 50px);
     height: 50px;
+
+    figure {
+        margin: 0;
+
+        figcaption {
+            color: white;
+            font-weight: bold;
+            position: fixed;
+            bottom: 40px;
+            left: 45px;
+        }
+
+        #faz-token {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.emphasize {
+    animation: emphasize 1.5s ease-in-out;
+}
+
+@keyframes emphasize {
+    0% { transform: scale(1, 1) }
+    50% { transform: scale(1.5, 1.5) }
+    100% { transform: scale(1, 1) }
 }

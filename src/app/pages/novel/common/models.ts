@@ -1,4 +1,9 @@
 export interface Story {
     text: string;
-    buttons: string[]
+    buttons: Button[]
+}
+
+interface Button {
+    id: string;
+    text: string;
 }
