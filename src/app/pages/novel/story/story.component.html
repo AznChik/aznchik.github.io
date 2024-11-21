@@ -2,4 +2,10 @@
     <img src="../../../../assets/images/restart.png" alt="restart"/>
 </button>
 
+<p>{{ story.text }}</p>
+
+<section id="buttons">
+    <button *ngFor="let button of story.buttons">{{ button }}</button>
+</section>
+
 <section id="inventory"></section>

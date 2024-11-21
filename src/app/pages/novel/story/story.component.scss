@@ -15,6 +15,17 @@ button {
     }
 }
 
+p {
+    white-space: pre-wrap;
+    padding-top: 40px;
+}
+
+#buttons {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
 #inventory {
     position: fixed;
     bottom: 20px;

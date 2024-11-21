@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { intro } from '../common/constants';
+import { Story } from '../common/models';
 
 @Component({
   selector: 'app-story',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./story.component.scss']
 })
 export class StoryComponent {
+  protected story: Story = intro;
+  
   protected restartStory(): void { }
 }
