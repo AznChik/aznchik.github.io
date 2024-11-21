@@ -1,11 +1,19 @@
-<button id="open-disclaimer" title ="Open Disclaimer" (click)="openDisclaimer()">
-    <img id="novel-cover" src="../../../assets/images/FNAF-VIP.jpg" alt="novel cover"/>
-</button>
+<ng-container *ngIf="startStory; else defaultScreen">
+    <app-story></app-story>
+</ng-container>
 
-<dialog id="disclaimer-modal">
-    <h1>Disclaimer</h1>
+<ng-template #defaultScreen>
+    <button id="open-disclaimer" title ="Open Disclaimer" (click)="openDisclaimer()">
+        <img id="novel-cover" src="../../../assets/images/FNAF-VIP.jpg" alt="novel cover"/>
+    </button>
+    
+    <dialog id="disclaimer-modal">
+        <h1>Disclaimer</h1>
+    
+        <p>This serves as homage to Scott Cawthon, mastermind behind the FNAF (Five Nights at Freddy's) franchise,
+            by bringing his first interactive novel to life. The source material for this is free on Kindle.</p>
+        <p>I own none of this story's content and only claim how his words were brought to this digital reality.</p>
 
-    <p>This serves as homage to Scott Cawthon, mastermind behind the FNAF (Five Nights at Freddy's) franchise,
-        by bringing his first interactive novel to life. The source material for this is free on Kindle.</p>
-    <p>I own none of this story's content and only claim how his words were brought to this digital reality.</p>
-</dialog>
+        <button id="start-story" title="Start Story" (click)="startStory = true">Story Time!</button>
+    </dialog>
+</ng-template>

@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./novel.component.scss']
 })
 export class NovelComponent {
+  protected startStory: boolean = false;
+  
   protected openDisclaimer(): void {
     document.querySelector('#novel-cover')?.classList.add('opacity');
 

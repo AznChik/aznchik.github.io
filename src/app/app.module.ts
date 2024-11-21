@@ -12,6 +12,7 @@ import { ProductComponent } from './pages/music/components/product/product.compo
 import { StockComponent } from './pages/music/components/stock/stock.component';
 import { MusicComponent } from './pages/music/music.component';
 import { NovelComponent } from './pages/novel/novel.component';
+import { StoryComponent } from './pages/novel/story/story.component';
 import { ForecastComponent } from './pages/weather/components/forecast/forecast.component';
 import { TempWeatherComponent } from './pages/weather/components/forecast/temp-weather/temp-weather.component';
 import { CountriesComponent } from './pages/weather/components/form/countries/countries.component';
@@ -45,6 +46,7 @@ import { WeatherComponent } from './pages/weather/weather.component';
     SectionSeasonComponent,
     StatesComponent,
     StockComponent,
+    StoryComponent,
     TempWeatherComponent,
     WeatherComponent
   ],
