@@ -27,6 +27,7 @@ p {
 }
 
 #inventory {
+    display: flex;
     position: fixed;
     bottom: 20px;
     background-color: $green;
@@ -49,6 +50,11 @@ p {
             width: 50px;
             height: 50px;
         }
+    }
+
+    #vip-passes {
+        width: 55px;
+        height: 55px;
     }
 }
 

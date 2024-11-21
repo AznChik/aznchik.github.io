@@ -32,6 +32,12 @@ describe('StoryComponent', () => {
       component['continueStory']('normal');
       expect(component['story']).toEqual(storySegments[1]);
     });
+
+    it('should set story to passes and showPasses to true when id = passes', () => {
+      component['continueStory']('passes');
+      expect(component['story']).toEqual(storySegments[2]);
+      expect(component['showPasses']).toBe(true);
+    });
   });
 
   describe('restartStory()', () => {
@@ -47,6 +53,12 @@ describe('StoryComponent', () => {
       component['restartStory']();
       expect(component['story']).toEqual(storySegments[0]);
       expect(component['tokenCount']).toEqual(0);
+    });
+
+    it('should reset showPasses to false', () => {
+      component['showPasses'] = true;
+      component['restartStory']();
+      expect(component['showPasses']).toBe(false);
     });
   })
 });

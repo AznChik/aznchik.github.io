@@ -51,4 +51,21 @@ const arrival: Story = {
     ]
 }
 
-export const storySegments: Story[] = [intro, arrival];
+const passes: Story = {
+    text: `
+    A line of other kids and their parents has formed behind you, so you step to the side to examine your card. It's a dull gray with a silver magnetic stripe on the back and the letters VIP printed on the front in black permanent marker.\n
+    "What's vip?" Ike asks. He pronounces the acronym as a word rhyming with zip.\n
+    "Vee-eye-pee," you say. Ike giggles.\n
+    "It stands for 'very important person,'" you explain.\n
+    "Are we very important?" he asks.\n
+    "We're supposed to be."\n
+    But this card doesn't make you feel important at all. It's so plain compared to the colorful, glossy entry passes with the Pizzaplex logo that the employee is handing out to other customers. It's also greasy, with dust, crumbs, and hair stuck to it. Disgusting.\n
+    You consider swapping with Ike, but his card is covered with flecks of dried tomato sauce, so you just wipe yours against your jeans, planning to wash it off in a bathroom later.\n
+    You expected the Pizzaplex to roll out the red carpet, but it seems you are on your own. Some kids are using their cards at terminals near the entrance. They must be information kiosks to help plan a visit.`,
+    buttons: [
+        { id: 'terminal', text: "Click here to use your pass at a terminal" },
+        { id: 'gate', text: "Click here to use your pass at a gate"}
+    ]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes];

@@ -8,6 +8,7 @@ import { Story } from '../common/models';
   styleUrls: ['./story.component.scss']
 })
 export class StoryComponent {
+  protected showPasses: boolean = false;
   protected story: Story = storySegments[0];
   protected tokenCount: number = 0;
 
@@ -20,6 +21,10 @@ export class StoryComponent {
         break;
       case 'normal':
         this.story = storySegments[1];
+        break;
+      case 'passes':
+        this.story = storySegments[2];
+        this.showPasses = true;
     }
   }
   
@@ -27,5 +32,6 @@ export class StoryComponent {
     document.querySelector('#faz-token')?.classList.remove('emphasize');
     this.story = storySegments[0];
     this.tokenCount = 0;
+    this.showPasses = false;
   }
 }
