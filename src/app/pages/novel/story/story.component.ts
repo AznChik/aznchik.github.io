@@ -25,6 +25,9 @@ export class StoryComponent {
       case 'passes':
         this.story = storySegments[2];
         this.showPasses = true;
+        break;
+      case 'terminal':
+        this.story = storySegments[3];
     }
   }
   

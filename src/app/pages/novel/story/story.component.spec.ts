@@ -38,6 +38,11 @@ describe('StoryComponent', () => {
       expect(component['story']).toEqual(storySegments[2]);
       expect(component['showPasses']).toBe(true);
     });
+
+    it('should set story to terminal when id = terminal', () => {
+      component['continueStory']('terminal');
+      expect(component['story']).toEqual(storySegments[3]);
+    });
   });
 
   describe('restartStory()', () => {

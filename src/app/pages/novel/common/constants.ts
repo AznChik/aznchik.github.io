@@ -68,4 +68,22 @@ const passes: Story = {
     ]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes];
+const terminal: Story = {
+    text: `
+    By the time you reach the terminals behind the Welcome desk, all but one are already being used by customers. You insert your VIP pass into the slot below its screen and it's slurped into the wall. The bouncing Pizzaplex logo disappears and is replaced with a blue screen.\n
+    "Terrific," you say. The machine is broken. You pound a fist against the kiosk. "Give me back my card!"\n
+    Pixel art pizzas with white wings start flying across the screen. Then static crackles across the image.\n
+    "It's glitched," Ike says.\n
+    "You think?" you snap.\n
+    The static clears to reveal the face of a pink cartoon pig with large round glasses that make his eyes look big. He wears an oversized black suit jacket with a loose red tie. Behind his head, a purple synthwave grid moves against a black background.\n
+    "Hi, pig!" Ike says. "You're super cute!"\n
+    You gently smack the back of Ike's head. "He can't hear you, silly. It's just a recording."\n
+    The pig grins. "Good morning, Devon and Ike! Welcome to Freddy Fazbear's Mega Pizzaplex!" he sounds like a young kid with a stuffy nose.\n
+    "Uh. A customized recording?" you say. "How do you know our names?"\n
+    "I know a lot," he says. "I am a Very Informative Pig. My friends call me VIP. Will you be my friends?"\n
+    "I'll be your friend, VIP!" Ike chirps.\n
+    "Thank you. Stick with me and we will have oodles of fun together."`,
+    buttons: [{ id: 'vip', text: "Click here to continue" }]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal];
