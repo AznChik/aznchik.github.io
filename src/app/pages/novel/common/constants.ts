@@ -86,4 +86,34 @@ const terminal: Story = {
     buttons: [{ id: 'vip', text: "Click here to continue" }]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes, terminal];
+const gate: Story = {
+    text: `
+    You stride toward the entry gates with Ike on your heels, hoping the stupid VIP pass works.\n
+    Here goes, you think. You press the card to a reader and the display flashes green. The gate swings open away from you.\n
+    "Yes!" you say.\n
+    But before you can step through, it slams shut again. No!\n
+    The display flickers and turns from green to red, with glowing white text: "See VIP."\n
+    "I am the VIP!" you shout.\n
+    You snatch Ike's pass and try it. Same thing.\n
+    Your brother presses against your side. He's trembling. "Can we go now?" he asks in a timid voice.\n
+    "What's wrong with you?" you say harshly. He's terrified by something on the other side of the gates. No, it's someone: Glamrock Chica is standing nearby, mobbed by joyful kids. The six-foot-plus white chicken's head swivels in your direction and her purple eyes look directly into yours. You can't help but shiver.\n
+    You clear your throat. "I thought she's your favorite."\n
+    "She's too big," Ike squeaks.\n
+    "Haven't you seen an animatronic before?" Then you realize he hasn't. This is his first time visiting the Mega Pizzaplex. No wonder he was so excited to come with you. "They're harmless. The worst thing she'll make you do is exercise and eat junk food."\n
+    Glamrock Chica suddenly sprints toward the entrance, closing the distance fast. Ike screams and covers his eyes.\n
+    When she reaches your gate, she stops and says cheerfully, "Are you lost?"\n
+    You've seen the Glamrock animatronics before in person, but only on the stage and in their greenrooms, behind a glass window. Okay, up close Glamrock Chica is maybe a little scary, as scary as someone can be in a pink leotard and leg warmers. But since Ike is afraid, you certianly aren't going to show any nervousness.\n
+    "Hey, Glamrock Chica." Should you call her Ms. Chica? Idiot, she's just a fancy robot. It's not like she has any feelings or intelligence.\n
+    You hold up your VIP pass. "This thing doesn't work."\n
+    She stares at it curiously. "Oh! You must be Devon." She leans over the entry gate and looks down at Ike. "And you're Ike."\n
+    Ike peeks out from between his fingers. "You know who I am?"\n
+    Glamrock Chica straightens. "Of course! We're so happy you've come to have fun with us at the Mega Pizzaplex today. VIP is expecting you. Just insert your pass in a terminal over there." She points to the wall behind the Welcome desk.\n
+    Ike puts his hands on top of the gate and looks at Chica adoringly. "I like your bow," he says.\n
+    Chica runs a hand over the three feathers on her head. "Thanks, kid. Hey, here's a hint that might help you later. If you get lost, just keep going left." She winks.\n
+    "OK..." You shrug and head toward a terminal.\n
+    "Bye, Chica!" Ike shouts.\n
+    "See you later. Have fun!" she says as she stomps off.`,
+    buttons: [{ id: 'terminal', text: "Click here to continue" }]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal, gate];

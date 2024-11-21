@@ -43,6 +43,11 @@ describe('StoryComponent', () => {
       component['continueStory']('terminal');
       expect(component['story']).toEqual(storySegments[3]);
     });
+
+    it('should set story to gate when id = gate', () => {
+      component['continueStory']('gate');
+      expect(component['story']).toEqual(storySegments[4]);
+    });
   });
 
   describe('restartStory()', () => {
