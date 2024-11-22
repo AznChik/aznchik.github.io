@@ -31,6 +31,9 @@ export class StoryComponent {
         break;
       case 'gate':
         this.story = storySegments[4];
+        break;
+      case 'vip':
+        this.story = storySegments[5];
     }
   }
   

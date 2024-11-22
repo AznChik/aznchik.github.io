@@ -116,4 +116,46 @@ const gate: Story = {
     buttons: [{ id: 'terminal', text: "Click here to continue" }]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes, terminal, gate];
+const vip: Story = {
+    text: `
+    Ike's right about one thing: VIP is cute. He reminds you of those animated ads for the Pizzaplex with catoon renditions of the Glamrock animal mascots. But you've never seen or heard of him before.\n
+    "Are you a new feature?" you ask.\n
+    "Actually, I have been at the Pizzaplex for a while; however, it has been a very, very long time since I was last activated."\n
+    VIP's smile turns upside down and a large blue tear appears below his right eye. Then he's back to his bright and cheerful self.\n
+    Ike's hopping up and down in front of the terminal. You ignore him and ask VIP, "What do you do?"\n
+    A graduation cap pops onto VIP's head. "I think and I know things. I am a digital companion for Pizzaplex guests. I can answer questions and make suggesions to enhance your visit."\n
+    "I have a question!" Ike says, shifting from one foot to the other.\n
+    VIP looks at Ike. "It looks like you need a restroom. Would you like dirctions?"\n
+    Ike goes still. "I do need to go potty," he says in a hushed voice.\n
+    "Hold it in," you say. "I have more important questions. How'd I win this special pass? I never entered any contest."\n
+    "I am programmed to anticipate what people want. I selected your name from a log of guests in a five-mile radius who have not returned in six or more months. And are not missing or deceased," VIP says.\n
+    "You invited us?" you ask.\n
+    "Precisely," VIP says.\n
+    "That's why the staff wasn't expecting us today," you say.\n
+    Something falls out into the slot below the screen with a hard thump. You pull it out. It's a large cookie in the shape of VIP's hed.\n
+    "What's this?" you ask.\n
+    "A smart cookie for a smart cookie," VIP says.\n
+    It's stale. You pass it to Ike. He grabs it eagerly and bites in.\n
+    "Ow!" Ike says. "Yuck."\n
+    "You said you haven't been activated in a while. Why not?" you ask.\n
+    A frown flickers across VIP's face, but so quickly you might have missed it had you blinked.\n
+    "Most kids did not appreciate my recommendations and preferred to do everything on their own. Parents have not been interested in paying a premium for my services. Consequently, I have been woefully underutilized," he says. "But I know I am an important part of the Mega Pizzaplex. And I can prove it! Go ahead, ask me anything."\n
+    "O... kay..." You glance at a poster on the wall showing Glamrock Bonnie the Bunny and Montgomery Gator with their arms over each other's shoulders and the words: DON'T ASK "WHY ANIMATRONICS?" ASK INSTEAD, "WHY NOT MORE ANIMATRONICS?"\n
+    "What does disconcerting mean?" you ask.\n
+    VIP closes his eyes. "Disconcerting. Adjective. To make one feel troubled or uncomfortable."\n
+    The background behind VIP changes to a purple spiral swirling against yellow with red and green triangles falling down the screen.\n
+    "Here is something to make your day even more magical," VIP says. He swirls his magic wand, creating a shower of gold sparkles, and something drops into the slot below the screen with a kerthunk.\n
+    You reach down and pull out a gamepad with a red rubber case and carrying handles on the sides. You switch it on and are disappointed when VIP's face appears on the screen instead of a video game.\n
+    "This device allows us to communicate with each other throughout your visit," VIP says.\n
+    Great, you think.\n
+    As if he can read your mind, VIP puts his hands together and says, "This is my last opportunity to demonstrate the value I add for guests. If you promise not to ignore me during your visit, I can offer you a Fazbear experience like no other. And rememeber, it is all free for the day. Do you promise not to abandon me?"\n
+    Ike's head bobbles enthusiastically. "I piggy promise!"\n
+    Kids cheer "Yay!" from the gamepad.\n
+    VIP fixes his gaze on you.`,
+    buttons: [
+        { id: 'agree', text: "Click here if you promise to stick with VIP all day" },
+        { id: 'disagree', text: "Click here if you don't make a promise you can't keep" }
+    ]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip];

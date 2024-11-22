@@ -48,6 +48,11 @@ describe('StoryComponent', () => {
       component['continueStory']('gate');
       expect(component['story']).toEqual(storySegments[4]);
     });
+
+    it('should set story to vip when id = vip', () => {
+      component['continueStory']('vip');
+      expect(component['story']).toEqual(storySegments[5]);
+    });
   });
 
   describe('restartStory()', () => {
