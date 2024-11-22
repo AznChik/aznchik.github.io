@@ -58,6 +58,11 @@ describe('StoryComponent', () => {
       component['continueStory']('agree');
       expect(component['story']).toEqual(storySegments[6]);
     });
+
+    it('should set story to disagree when id = disagree', () => {
+      component['continueStory']('disagree');
+      expect(component['story']).toEqual(storySegments[7]);
+    });
   });
 
   describe('restartStory()', () => {

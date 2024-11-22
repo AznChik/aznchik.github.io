@@ -178,4 +178,21 @@ const agree: Story = {
     buttons: [{ id: 'bowling', text: "Click here to continue" }]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree];
+const disagree: Story = {
+    text: `
+    "Devon?" VIP asks.\n
+    "Nah. It's bad enough that I'm stuck babysitting Ike," you say. "I don't need Pig Brother watching and telling me what to do."\n
+    "Is that your final answer?" VIP asks. The background behind him blooms crimson.\n
+    "Yup. Can we go now?"\n
+    The screen flickers and VIP's animation jitters. "C-c-c-certainly. Your passes are now activated." The terminal spits out your card forcefully and you fumble to catch it.\n
+    On the gamepad, VIP crosses his arms and says, "I will be right here when you need me." The terminal goes dark. You hand the gamepad to Ike.\n
+    When you press your card against the scanner at the entrance, the light turns green and the gate opens. As you finally enter the Pizzaplex, Ike trails behind, fixated on the gamepad.\n
+    "It has a map of the whole place!" Ike says. "Hey, it looks like a pizza."\n
+    "I have marked the most popular attractions and the most direct paths to them," VIP says. "Currently, Roxy Raceway and Monty's Maze have the shortest wait-"\n
+    "I already know where I'm going," you lie. "Shut that off, Ike."\n
+    "Please do not do that," VIP pleads. "We still have to do our special behind-the-scenes tour! You can vist many locations closed to the public: the Rehearsal Room, the Kitchen, Parts and Services..."\n
+    You would love to brag to your friends about seeing some hidden parts of the Pizzaplex. "Now you're talking, pig," you say. "Let's go!"`,
+    buttons: [{ id: 'bowling', text: "Click here to continue" }]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree, disagree];

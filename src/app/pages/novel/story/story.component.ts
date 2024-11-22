@@ -37,6 +37,9 @@ export class StoryComponent {
         break;
       case 'agree':
         this.story = storySegments[6];
+        break;
+      case 'disagree':
+        this.story = storySegments[7];
     }
   }
   
