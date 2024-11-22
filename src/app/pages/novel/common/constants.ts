@@ -223,4 +223,58 @@ const bowling: Story = {
     ]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree, disagree, bowling];
+const ditch: Story = {
+    text: `
+    "Look, Ike! They have a merry-go-round."\n
+    Ike immediately stops and stares at it. As a music box version of "Pop! Goes the Weasel" plays, three rings rotate in opposite directions with old timey versions of animatronics Freddy Fazbear, Chica the Chicken, and Bonnie the Bunny to ride on. Funtime Foxy sits at the prow of a small pirate ship, pointing the way forward with his hook, and there's even a Balloon Boy hot-air balloon and Mr. Cupcake seat.\n
+    "I want to ride that," Ike says in a hushed voice.\n
+    "Maybe after Bonnie Bowl," you say.\n
+    "No! I want to ride it now!" Ike says.\n
+    "I don't know..." you say.\n
+    "PLEASE," Ike says.\n
+    You smile. "Okay. If you really want to, I guess we can do Bonnie Bowl later."\n
+    You wait in line, and as soon as the gate opens, Ike races for one of the Chica seats. He climbs in.\n
+    "I'm going to go to the arcade while you ride this," you say. "Just stay here until I get back."\n
+    VIP wags a finger and shakes his head. "Children should not be left unattended."\n
+    You're tired of this Very Irritating Pig. You put the gamepad on the seat next to Ike. "Then you keep an eye on him."\n
+    "Please do not go," VIP says. The background strobes yellow and white. "Y-y-you said you would not abandon me."\n
+    "I'm not abandoning you. I'll be back." Eventually.\n
+    You find your friends Alistair, Gabe, and Emma in the Fazcade. They're surprised to see you.\n
+    "Yeah, I won a VIP contest." You show them your special pass, but they aren't impressed by the plain plastic card.\n
+    Gabe cracks up. "What is that?"\n
+    "You obviously made that yourself." Emma shakes her head. "That's just embarrassing."\n
+    You bet the gamepad would convince them you're telling the truth, but if you go back for it then you'll be stuck with VIP and Ike again. Your friends don't seem that interested anyway.\n
+    Alistair is trying to get the high score in Catch-That-Fetch, but when he runs out of tokens he gives up.\n
+    "Let's get out of here," he says.\n
+    "Come on, hang out a little longer," you say. "Let's go on some rides."\n
+    "We've been on all of them so many times," Gabe says. "They're boring."\n
+    "I could eat," you say. "Maybe the Glamrock animatronics are performing soon."\n
+    "Animatronics are for little kids, Dev."\n
+    "I meant, we could watch them ironically."\n
+    "Why don't you come with us?" Emma says. "We're going to play the new Dino Shock at my place."\n
+    "Nah. I think I'll stay a while," you say.\n
+    "Right. Enjoy your 'VIP pass.'" Gabe winks. They laugh and walk off.\n
+    Alone and annoyed, you play a round of Catch-That-Fetch and take some satisfaction in easily beating the high score. Before you can enter your initials, the screen scrambles. When it stops glitching, you see VIP's face. And he is one Very Irate Pig.\n
+    Around you, people are complaining. "Hey, what happened to my game?" "What's with this pig?" "Are we being pranked?" "I just lost my token!"\n
+    You look around and see VIP's face on arcade games throughout the entire Fazcade. His colors are scarily inverted. Uh-oh.\n
+    Words pop up on the screens: YOU LIED, DEVON.\n
+    "Who's Devon?" people say.\n
+    You back away from the arcade cabinet. How is VIP doing this?\n
+    That doesn't matter. You just have to get him to stop.\n
+    You hurry to a terminal in the Atrium. When you insert your pass, a red-faced VIP appears and says, "I wondered if I should trust you, but I wanted to. Whatever happens next is your fault."\n
+    "You have my full attention now," you say.\n
+    "Good. More importantly, I have your brother." VIP is suddenly wearing a shirt that says "I like Ike."\n
+    Your blood runs cold. "Where's Ike? Is he okay?"\n
+    "He is fine. For now. I have hidden him somewhere in the Pizzaplex."\n
+    "What do you want?"\n
+    "I want you to play with me all day like you promised. You can get your brother back by winning my special game."\n
+    "And if I don't?"\n
+    VIP smiles broadly. "Ike remains trapped here forever. Sorry, I had no other choice. But you do."`,
+    buttons: [
+        { id: 'report', text: "Click here if you report VIP to Pizzaplex staff" },
+        { id: 'challenge', text: "Click here if you take VIP up on his challenge" },
+        { id: 'mom', text: "Click here if you call your mom for help" }
+    ]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree, disagree, bowling, ditch];

@@ -68,6 +68,11 @@ describe('StoryComponent', () => {
       component['continueStory']('bowling');
       expect(component['story']).toEqual(storySegments[8]);
     });
+
+    it('should set story to ditch when id = ditch', () => {
+      component['continueStory']('ditch');
+      expect(component['story']).toEqual(storySegments[9]);
+    });
   });
 
   describe('restartStory()', () => {

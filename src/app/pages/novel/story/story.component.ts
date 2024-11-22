@@ -43,6 +43,9 @@ export class StoryComponent {
         break;
       case 'bowling':
         this.story = storySegments[8];
+        break;
+      case 'ditch':
+        this.story = storySegments[9];
     }
   }
   
