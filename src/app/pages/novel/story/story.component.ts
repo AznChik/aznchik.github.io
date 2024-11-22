@@ -40,6 +40,9 @@ export class StoryComponent {
         break;
       case 'disagree':
         this.story = storySegments[7];
+        break;
+      case 'bowling':
+        this.story = storySegments[8];
     }
   }
   

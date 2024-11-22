@@ -195,4 +195,32 @@ const disagree: Story = {
     buttons: [{ id: 'bowling', text: "Click here to continue" }]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree, disagree];
+const bowling: Story = {
+    text: `
+    There's so much to do at the Mega Pizzaplex, you hardly know where to start. As you pass through the lobby, you look at the vibrant posters of all the attractions, planning out your day. With your VIP pass, you'll finally get to go on all the rides you want!\n
+    Every birthday party you have been to at the Pizzaplex only included a few tokens for the Fazcade and the boring old Bonnie Bowl, but you've always wanted to try Roxy Raceway, racing go-karts at high speeds on the tracks snaking through the Atrium. And you're itching to go to Fazer Blast, since you play so many first-person shooters. It would just be a lot more fun to do this with your friends than your little brother.\n
+    The gamepad beeps. You glance at the screen and VIP says, "You look like you are choosing an activity. Would you like some help?"\n
+    "No, I'm good," you say.\n
+    VIP produces a bowling ball. "The most popular attraction at the Mega Pizzaplex is Bonnie Bowl and it is best to go before the midday birthday party rush." He rolls the ball toward the screen and it "cracks" the glass. Animated shards tumble down, leaving behind a black background.\n
+    You shake your head, but Ike pipes up, "I wanna bowl!"\n
+    "We aren't bowling," you say.\n
+    "Bonnie Bowl!" Ike shouts.\n
+    VIP saunters back onscreen. "No yelling."\n
+    "Bonnie Bowl," Ike repeats. "Bonnie Bowl Bonnie Bowl Bonnie Bowl..."\n
+    On the way toward the bowling alley, you point out other fun attractions like Monty's Maze and Fazer Blast, but Ike can't be swayed. VIP isn't helping the situation by feeding you ads for Bonnie Bowl and tips about the game. The more he hypes it up, the less you want to do it.\n
+    When you pass the Fazcade, you pause and gaze longingly at the rows of arcade and pinball machines inside. You spot your friends, Alistair, Gabe, and Emma playing one of your favorite games, Catch-That-Fetch.\n
+    You wish you were hanging out with them instead of your brother!\n
+    "Too bad the Pizzaplex doesn't have a daycare," you say.\n
+    "They plan to build one in the expansion," VIP says.\n
+    "That doesn't do me much good now."\n
+    You sadly continue to follow Ike. Maybe if you let him beat you at Bonnie Bowl quickly, he'll agree to go to the arcade next. Unfortunately, bowling with a six-year-old usually takes time and patience, and you know you're going to waste a lot of your special day there.\n
+    It's so unfair.\n
+    Then you spot something that could give you freedom for a little while: a merry-go-round in the Play Area. Once Ike is on a carousel, it's almost impossible to get him to leave. He would ride it for hours if you let him.\n
+    HOURS.`,
+    buttons: [
+        { id: 'ditch', text: "Click here if you ditch Ike on the merry-go-round" },
+        { id: 'stay', text: "Click here if you continue on to the Bonnie Bowl" }
+    ]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree, disagree, bowling];
