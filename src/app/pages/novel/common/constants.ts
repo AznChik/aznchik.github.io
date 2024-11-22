@@ -158,4 +158,24 @@ const vip: Story = {
     ]
 }
 
-export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip];
+const agree: Story = {
+    text: `
+    You don't like the idea of being stuck with both VIP and Ike for the whole day, especially since the pig wants to be in charge. Having a chaperone, even a virtual one limited to video screens, is the opposite of fun.\n
+    But VIP is the reason you're here. He's probably lonely, you think.\n
+    You know how that feels. Or at least you did, before Ike started tagging along all the time. Now you wish you had more space from him.\n
+    "Devon, do you promise not to abandon me?" VIP asks.\n
+    "I guess so. Sure," you say. Whatever it takes to just get inside the Pizzaplex.\n
+    The gamepad plays the sound of cheering kids.\n
+    "I really hope you mean that." VIP waves his wand and says, "Fazza bedazzla! Your passes are now activated."\n
+    The terminal spits out your card and blinks off. On your gamepad screen, VIP raises his fist into the air. "Now, who wants to have some Mega fun?" he says.\n
+    "Meeeeee!" Ike says.\n
+    You roll your eyes.\n
+    At the entrance, you and Ike stand in front of two gates and press your cards to the scanners. They flash green and the gates open. Ike runs inside.\n
+    "No running, please!" VIP says.\n
+    Ike stops short. "Sorry!"\n
+    "Perhaps we should go over the current rules for safety before we continue." VIP pulls out a scroll tied with a ribbon. When he opens it, the page rolls off the bottom of the screen.\n
+    You sigh.`,
+    buttons: [{ id: 'bowling', text: "Click here to continue" }]
+}
+
+export const storySegments: Story[] = [intro, arrival, passes, terminal, gate, vip, agree];

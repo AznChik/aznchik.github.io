@@ -34,6 +34,9 @@ export class StoryComponent {
         break;
       case 'vip':
         this.story = storySegments[5];
+        break;
+      case 'agree':
+        this.story = storySegments[6];
     }
   }
   
